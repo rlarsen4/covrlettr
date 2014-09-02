@@ -1,0 +1,88 @@
+.content{
+	overflow: hidden;
+	max-width: 85%;
+	margin: auto;
+}
+
+.mainForm {
+	overflow: hidden;
+	clear: left;
+	position: relative;
+}
+
+fieldset {
+	border-radius: 5px;
+}
+
+button {
+	border-radius: 5px;
+	background-color: #338899;
+	color: white;
+}
+.hiringManager, .companyName, .addressOne, .addressTwo {
+	width: 300px;
+}
+
+.state {
+	width: 30px;
+}
+
+.zip {
+	width: 50px;
+}
+
+.controls {
+	margin: auto;
+}
+
+.errorMessage {
+	color: red;
+}
+
+.letterStuff {
+	width: 85%;
+	min-height: 300px;
+	display: none;
+}
+.companyInfo {
+	min-width: 400px;
+	float: left;
+}
+
+.instructions1, .instructions2, .instructions3 {
+	background-color: #338899;
+	color: #fff;
+	padding: 10px;
+	top: 60px;
+	border-radius: 5px;
+}
+
+.instructions1 {
+
+}
+
+.instructions2 {
+	display: none;	
+}
+
+.instructions3 {
+	display: none; 	 	
+}
+.techSkills {
+	float: left;
+	display: none;
+}
+
+.softSkills {
+	display: none;
+}
+
+@media print {
+	.instructions1, .instructions2, .instructions3, .mainForm, button {
+		display: none;
+	}
+
+	fieldset {
+		border: none;
+	}
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Write my cover letter</title>
+	<link rel="stylesheet" type="text/css" href="covrlettr.css">
+</head>
+<body>
+	<div class="content">
+		<div class="instructions1">
+			Using this convenient form, you can conveniently click desired skills and generate a custom cover letter to attach to my resume. Click next to continue.
+		</div>
+		<div class="instructions2">
+			Please click on the specific technologies and/or skills needed for this position.
+		</div>
+		<div class="instructions3">
+			Please click on any soft skills or non-technical skills desired for this position.
+		</div>
+		<div class="mainForm">
+			<div class="companyInfo">
+			<fieldset><legend>Company Info</legend>
+				<input type="text" placeholder="Hiring Manager (Your Name)" class="hiringManager"><br>
+				<input type="text" placeholder="Company Name" class="companyName"><br>
+				<input type="text" placeholder="Address 1" class="addressOne"><br>
+				<input type="text" placeholder="Address 2" class="addressTwo"><br>
+				<input type="text" placeholder="City" class="city">&nbsp;
+				<input type="text" placeholder="State" class="state">
+				<input type="text" placeholder="Zip" class="zip"><br>
+				<button class="nextInfo">Next</button>
+			</fieldset>
+			</div>
+			
+			<div class="techSkills">
+			<fieldset><legend>Tech Skills</legend>
+				<form action="">
+				<input type="text" placeholder="Job opening" class="jobTitle"><br>
+				<input type="checkbox" name="techskills" id="htmlcss" text="htmlcss" checked="checked">html/css <br>
+				<input type="checkbox" name="techSkills" id="javascript">javascript/jquery <br>
+				<input type="checkbox" name="techSkills" id="php">php <br>
+				<input type="checkbox" name="techSkills" id="cSharp">c# <br>
+				<input type="checkbox" name="techSkills" id="vbDotNet">vb.NET <br>
+				<input type="checkbox" name="techSkills" id="javaSun">java <br>
+				<input type="checkbox" name="techSkills" id="sqlSlashMySql">sql/mySql
+				</form>
+				<button class="nextTech">Next</button>
+			</fieldset>
+			</div>
+			
+			<div class="softSkills">
+			<fieldset><legend>Soft Skills</legend>
+				<input type="checkbox" name="softSkills" id="leadership">leadership <br>
+				<input type="checkbox" name="softSkills" id="training">training <br>
+				<input type="checkbox" name="softSkills" id="collaboration">collaboration <br>
+				<input type="checkbox" name="softSkills" id="changeMgmt">change management <br> 
+				<input type="checkbox" name="softSkills" id="writing">writing <br> 
+				<div class="controls">
+					<button class="createLetter">create letter</button>
+				</div>
+			</fieldset>
+			</div>
+		</div>
+		<div class="errorMessage"></div>
+		<div class="letterStuff">
+			<fieldset class="letterHolder">
+			<div class="letterResults">
+			 </div>
+			</fieldset>
+			<button class="printVersion">print version</button>
+			<button class="saveButton">save</button>
+			<button class="tryAgain">try again</button>
+		</div>
+	</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="letterbuilder.js"></script>
+</body>
+</html>
